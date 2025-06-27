@@ -8,7 +8,6 @@ module org.dataoganalysekaeder {
     requires java.net.http;
     requires com.fasterxml.jackson.databind;
     exports org.dataoganalysekaeder;
-    exports org.dataoganalysekaeder.storeInfo;
-    exports org.dataoganalysekaeder.scraper;
+
 
 }

@@ -26,6 +26,10 @@ application {
     mainClass.set('org.dataoganalysekaeder.Main')
 }
 
+tasks.withType(JavaExec) {
+    standardInput = System.in
+}
+
 dependencies {
     implementation('org.jsoup:jsoup:1.18.3')
     implementation('org.seleniumhq.selenium:selenium-java:4.18.1')

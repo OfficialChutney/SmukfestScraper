@@ -1,32 +1,27 @@
 package org.dataoganalysekaeder;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.dataoganalysekaeder.scraper.XLBygScraper;
-import org.dataoganalysekaeder.storeInfo.Address;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.URI;
-import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
-import java.time.Duration;
-import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-//        Controller controller = new Controller();
-//        controller.scrape();
-//        controller.printToCSV();
-
-        XLBygScraper scraper = new XLBygScraper();
+        Scraper scraper = new Scraper();
         scraper.scrape();
+
     }
+
+
 }
