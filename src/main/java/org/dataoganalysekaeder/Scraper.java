@@ -39,6 +39,7 @@ public class Scraper {
     public void scrape() throws Exception {
         System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
+
         WebDriver driver = new ChromeDriver(options);
 
         // Navigate and apply cookies
@@ -119,8 +120,8 @@ public class Scraper {
                     continue;
                 }
 
-                if (!(titel.contains("partout")
-                        || (titel.contains("plads") && titel.contains("kærligheden")))) {
+                if (!(/*titel.contains("partout")
+                        || */(titel.contains("plads") && titel.contains("kærligheden")))) {
                     continue;
                 }
 
