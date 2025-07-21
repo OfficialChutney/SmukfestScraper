@@ -112,16 +112,15 @@ public class Scraper {
                     continue;
                 }
 
-                if (!titel.contains("sælg")) {
+//                if (!(titel.contains("sælg") || titel.contains("salg"))) {
+//                    continue;
+//                }
+
+                if (titel.contains("søg")) {
                     continue;
                 }
 
-                if (titel.contains("søger")) {
-                    continue;
-                }
-
-                if (!(/*titel.contains("partout")
-                        || */(titel.contains("plads") && titel.contains("kærligheden")))) {
+                if (!titel.contains("partout")) {
                     continue;
                 }
 
